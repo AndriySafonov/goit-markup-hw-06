@@ -689,11 +689,49 @@ button {
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  resize: none;
+}
+.modal-form-textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
 .modal-form-checkbox {
+  width: 423px;
+  height: 24px;
+  margin: 0 auto;
+}
+.checkbox-label {
+  display: flex;
+  align-items: center;
 }
 .checkbox {
-  appearance: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.checkbox-icon {
+  margin-right: 7px;
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid;
+  border-radius: 1px;
+  color: var(--primary-color);
+}
+.checkbox:checked + .checkbox-icon {
+  border-color: transparent;
+  background-color: var(--accent);
+  background-size: contain;
+  background-origin: border-box;
 }
 .policy {
   font-size: 14px;
@@ -701,4 +739,21 @@ button {
   color: var(--accent);
   text-underline-offset: 3px;
   align-items: baseline;
+}
+.modal-button {
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 10px 52px;
+  min-width: 200px;
+
+  color: var(--primary-light-color);
+  background-color: var(--accent);
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
