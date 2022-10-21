@@ -490,6 +490,7 @@
                 type="text"
                 name="name"
                 id="name"
+                required
               />
               <svg class="modal-form-icon" width="18" height="18">
                 <use href="./images/sprite.svg#person-modal-icon"></use>
@@ -497,7 +498,13 @@
             </div>
             <div class="modal-form-field">
               <label for="tel" class="modal-form-label">Телефон</label>
-              <input class="modal-form-input" type="tel" name="tel" id="tel" />
+              <input
+                class="modal-form-input"
+                type="tel"
+                name="tel"
+                id="tel"
+                required
+              />
               <svg class="modal-form-icon" width="18" height="18">
                 <use href="./images/sprite.svg#phone-modal-icon"></use>
               </svg>
@@ -509,6 +516,7 @@
                 type="email"
                 name="mail"
                 id="mail"
+                required
               />
               <svg class="modal-form-icon" width="18" height="18">
                 <use href="./images/sprite.svg#email-modal-icon"></use>
@@ -532,12 +540,15 @@
                 type="checkbox"
                 name="policy"
                 id="policy"
+                required
               />
               <svg class="checkbox-icon" width="16" height="15">
                 <use href="./images/sprite.svg#icon-check"></use>
               </svg>
-              Погоджуюся з розсилкою та приймаю
-              <a href="" class="policy">Умови договору</a>
+              <span class="checkbox-description"
+                >Погоджуюся з розсилкою та приймаю</span
+              >
+              <a href="" class="policy"> Умови договору</a>
             </label>
           </div>
           <button class="modal-button" type="submit">Відправити</button>

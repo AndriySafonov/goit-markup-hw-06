@@ -421,6 +421,8 @@ button {
   border-radius: 4px;
   cursor: pointer;
   border: none;
+  color: var(--primary-color);
+  background-color: var(--background-secondary-color);
   transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -593,7 +595,7 @@ button {
   background-color: var(--accent);
 }
 .footer-subscription {
-  margin-left: 93px;
+  margin-left: auto;
 }
 .footer-title {
 }
@@ -611,6 +613,7 @@ button {
   border-radius: 4px;
   background-color: transparent;
   outline: none;
+  color: rgba(255, 255, 255, 0.6);
 }
 .footer-subscription-input::placeholder {
   font-size: 16px;
@@ -648,14 +651,21 @@ button {
 }
 .modal {
   width: 528px;
-  min-height: 581px;
+  height: 581px;
   background-color: var(--primary-light-color);
   position: absolute;
   padding: 40px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scaleY(1);
-  transition: transform 300ms linear;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close-icon:hover,
+.modal-close-icon:focus {
+  fill: var(--accent);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scaleY(0);
@@ -719,7 +729,7 @@ button {
 .modal-form-textarea:focus {
   border: 1px solid var(--accent);
   outline: none;
-  transition-property: box-shadow;
+  transition-property: fill, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -727,12 +737,11 @@ button {
   position: absolute;
   top: 50%;
   left: 12px;
-  transform: translate(50%);
 }
-.modal-form-input:hover ~ .modal-form-icon,
-.modal-form-input:focus ~ .modal-form-icon {
+.modal-form-input:hover + .modal-form-icon,
+.modal-form-input:focus + .modal-form-icon {
   fill: var(--accent);
-  transition-property: box-shadow;
+  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -757,6 +766,8 @@ button {
 .checkbox-label {
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 .checkbox {
   position: absolute;
@@ -771,7 +782,6 @@ button {
   overflow: hidden;
 }
 .checkbox-icon {
-  margin-right: 7px;
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -784,6 +794,11 @@ button {
   background-color: var(--accent);
   background-size: contain;
   background-origin: border-box;
+}
+.checkbox-description {
+  font-size: 14px;
+  line-height: 1.71;
+  color: #757575;
 }
 .policy {
   font-size: 14px;
