@@ -79,28 +79,38 @@ button {
   display: flex;
   align-items: center;
 }
-.header-logo {
+
+/* ---------------logo--------------- */
+
+.logo {
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19;
-  color: var(--accent);
-}
-.logo-akcent {
+  line-height: calc(31 / 26);
   color: var(--accent-darc-color);
 }
+.logo--another-color{
+  color: var(--primary-light-color);
+}
+.logo__akcent {
+  color: var(--accent);
+}
+
+/* ---------------site navigation--------------- */
+
+
 .site-nav {
   margin-left: 93px;
 }
-.site-nav-list {
+.site-nav__list {
   display: flex;
 }
-.site-nav-item {
+.site-nav__item {
 }
-.site-nav-item:nth-child(n + 2) {
+.site-nav__item:nth-child(n + 2) {
   margin-left: 50px;
 }
-.header-link {
+.site-nav__link {
   position: relative;
   padding: 32px 0;
   display: block;
@@ -112,7 +122,7 @@ button {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.current.header-link::after {
+.current.site-nav__link::after {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -123,8 +133,8 @@ button {
   border-radius: 2px;
   background-color: var(--accent);
 }
-.header-link:hover,
-.header-link:focus {
+.site-nav__link:hover,
+.site-nav__link:focus {
   color: var(--accent);
 }
 .current {
@@ -514,16 +524,7 @@ button {
 .footer-contacts {
   width: 231px;
 }
-.footer-logo {
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
-  color: var(--accent);
-}
-.footer-logo-akcent {
-  color: var(--primary-light-color);
-}
+
 .address {
   margin-top: 20px;
   font-style: normal;
