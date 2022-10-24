@@ -87,7 +87,7 @@ button {
   line-height: calc(31 / 26);
   color: var(--accent-darc-color);
 }
-.logo--another-color{
+.logo--another-color {
   color: var(--primary-light-color);
 }
 .logo__akcent {
@@ -304,51 +304,51 @@ button {
 .team {
   background-color: var(--background-secondary-color);
 }
-.team-title {
+.team__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--primary-color);
 }
-.team-list {
+.team__list {
   display: flex;
   margin-top: 50px;
 }
-.team-item {
+.team__item {
   background-color: var(--primary-light-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
 }
-.team-item:nth-child(n + 2) {
+.team__item:nth-child(n + 2) {
   margin-left: 30px;
 }
-.team-item-content {
+.team__item-content {
   padding: 30px 32px;
 }
 
-.team-subtitle {
+.team__subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   color: var(--primary-color);
 }
-.team-description {
+.team__description {
   margin-top: 10px;
   font-size: 16px;
   line-height: 1.19;
   color: var(--secondary-color);
 }
-.team-soc-list {
+.team__soc-list {
   display: flex;
   margin-top: 16px;
   gap: 10px;
 }
-.team-soc-item {
+.team__soc-item {
 }
-.team-soc-link {
+.team__soc-link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -360,38 +360,38 @@ button {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-soc-icon {
+.team__soc-icon {
   fill: currentColor;
 }
-.team-soc-link:hover,
-.team-soc-link:focus {
+.team__soc-link:hover,
+.team__soc-link:focus {
   background-color: var(--accent);
   color: var(--primary-light-color);
 }
 
-/* ---------------Постійні клієнти--------------- */
+/* ---------------OUR CLIENTS--------------- */
 
 .clients {
 }
 .section {
 }
-.clients-title {
+.clients__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--primary-color);
 }
-.clients-list {
+.clients__list {
   display: flex;
   margin-top: 50px;
   gap: 30px;
 }
-.clients-item {
+.clients__item {
   width: 170px;
   height: 92px;
 }
-.clients-link {
+.clients__link {
   width: 100%;
   height: 100%;
   border: 1px solid var(--icon-color);
@@ -404,8 +404,8 @@ button {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-link:hover,
-.clients-link:focus {
+.clients__link:hover,
+.clients__link:focus {
   fill: var(--accent);
   border: 1px solid var(--accent);
 }
@@ -596,13 +596,13 @@ button {
 }
 .footer-title {
 }
-.footer-subscription-form {
+.footer__form {
   display: flex;
   margin-top: 20px;
 }
-.footer-subscription-label {
+.footer__label {
 }
-.footer-subscription-input {
+.footer__input {
   width: 358px;
   height: 50px;
   padding-left: 16px;
@@ -612,12 +612,12 @@ button {
   outline: none;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-subscription-input::placeholder {
+.footer__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-subscription-button {
+.footer__button {
   display: flex;
   align-items: center;
   padding: 10px 28px;
@@ -635,7 +635,7 @@ button {
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.footer-subscription-icon {
+.footer__icon {
   margin-left: 10px;
 }
 .backdrop {
