@@ -1,0 +1,105 @@
+.header {
+  border-bottom: 1px solid var(--border-color);
+}
+.header .conteiner {
+  display: flex;
+  align-items: center;
+}
+/* ---------------logo--------------- */
+.logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  color: var(--accent-darc-color);
+}
+.logo--another-color {
+  color: var(--primary-light-color);
+}
+.logo__akcent {
+  color: var(--accent);
+}
+/* ---------------site navigation--------------- */
+.site-nav {
+  margin-left: 93px;
+}
+.site-nav__list {
+  display: flex;
+}
+.site-nav__item {
+}
+.site-nav__item:nth-child(n + 2) {
+  margin-left: 50px;
+}
+.site-nav__link {
+  position: relative;
+  padding: 32px 0;
+  display: block;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.current.site-nav__link::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent);
+}
+.site-nav__link:hover,
+.site-nav__link:focus {
+  color: var(--accent);
+}
+.current {
+  color: var(--accent);
+}
+/* ---------------authorization--------------- */
+.auth {
+  display: flex;
+  margin-left: auto;
+  gap: 50px;
+}
+.auth__mail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.auth__icon {
+  fill: currentColor;
+}
+.auth__tel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.auth__icon {
+  fill: currentColor;
+}
+.auth__mail:hover,
+.auth__mail:focus,
+.auth__tel:hover,
+.auth__tel:focus {
+  color: var(--accent);
+}
