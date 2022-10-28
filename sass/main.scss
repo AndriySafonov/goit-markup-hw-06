@@ -1,6 +1,21 @@
 @import './utils/variables';
-@import './base/reset';
-@import './components/conteiner.scss';
+@import './utils/hidden';
 
-@import './layputs/header';
-@import './layputs/hero';
+@import './base/reset';
+@import './base/common';
+
+@import './components/conteiner.scss';
+@import './components/section.scss';
+@import './components/logo.scss';
+@import './components/navigation.scss';
+@import './components/authorization';
+@import './components/modal';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/advantages';
+@import './layout/features';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/portfolio';
+@import './layout/footer';
