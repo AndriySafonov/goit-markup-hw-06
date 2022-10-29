@@ -37,8 +37,7 @@
   background-color: transparent;
   right: 8px;
   top: 8px;
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   justify-content: center;
   padding: 0;
 }
@@ -119,8 +118,7 @@
   color: rgba(117, 117, 117, 0.5);
 }
 .checkbox {
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   justify-content: center;
   gap: 10px;
 }

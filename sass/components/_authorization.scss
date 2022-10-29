@@ -4,8 +4,7 @@
   gap: 50px;
 }
 .auth__mail {
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   gap: 10px;
   font-weight: 500;
   line-height: 1.14;
@@ -19,8 +18,7 @@
   fill: currentColor;
 }
 .auth__tel {
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   gap: 10px;
   font-weight: 500;
   line-height: 1.14;

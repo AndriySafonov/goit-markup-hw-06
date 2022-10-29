@@ -49,8 +49,7 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   justify-content: center;
   color: var(--icon-color);
   transition-property: color, background-color;
